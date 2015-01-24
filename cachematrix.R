@@ -7,6 +7,7 @@ makeCacheMatrix <- function(x = matrix()) {
   InvMatrix <- NULL
   set <- function(y) {
     OrigMatrix <<- y
+    ## Destroy Invent Matrix if Orig Matrix change value
     InvMatrix <<- NULL
   }
   get <- function() OrigMatrix
